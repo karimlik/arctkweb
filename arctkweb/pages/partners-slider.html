@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../css/main.css"/>
+<link rel="stylesheet" href="../css/heading-img.css"/>
+<link rel="stylesheet" href="../css/nav-bar.css">
+<link rel="stylesheet" href="../css/partners.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+<title>ARCTK</title>
+</head>
+<body>
+	<style>
+		body { background: white; }
+	</style>
+	<nav id = "overlay">
+			<img src="../img/close.svg" alt="menu-btn" class="close-btn" id="close-menu">
+		<ul class="under-menu">
+			<li>
+				<a href="../index.html">home</a>
+				<span>the main page.</span>
+			</li>
+			<li>
+				<a href="#">about us</a>
+				<span>information about us.</span>
+			</li>
+			<li>
+				<a href="./portfolio.html">projects</a>
+				<span>our latest projects.</span>
+			</li>
+			<li>
+				<a href="#">partners</a>
+				<span>our partners companies.</span>
+			</li>
+			<li>
+				<a href="./contact.html">contact</a>
+				<span>contact with us.</span>
+			</li>
+		</ul>
+	</nav>
+
+	<header id="top_nav">
+			<a href="../index.html" class="logo">ArcTK GROUP</a>
+			<img src="../img/menu.svg" alt="menu-btn" class="menu-btn" id="open-menu">
+	</header>
+
+	<div class="wrapper">
+		
+		
+		
+		<div class="text-header">
+			<h1>
+				our partners
+			</h1>
+		</div>
+
+		<!-- Slider -->
+		<div class="client-carousel section-padding owl-carousel">
+			<div class="img-area">
+				<img src="../img/partners/jis.jpg" alt="Jeykhun Imanov Studio">
+			</div>
+			<div class="img-area">
+				<img src="../img/partners/collezione.png" alt="Jeykhun Imanov Studio">
+			</div>
+			<div class="img-area">
+				<img src="../img/partners/casamia.jpg" alt="Jeykhun Imanov Studio">
+			</div>
+			<div class="img-area">
+				<img src="../img/partners/tutobello.png" alt="Jeykhun Imanov Studio">
+			</div>
+			<div class="img-area">
+				<img src="../img/partners/bon-appetit.png" alt="Jeykhun Imanov Studio">
+			</div>
+			<div class="img-area">
+				<img src="../img/partners/knauf.jpg" alt="Jeykhun Imanov Studio">
+			</div>
+			<div class="img-area">
+				<img src="../img/partners/gilan.jpg" alt="Jeykhun Imanov Studio">
+			</div>
+			<div class="img-area">
+				<img src="../img/partners/garden-shop.jpg" alt="Jeykhun Imanov Studio">
+			</div>
+			<div class="img-area">
+				<img src="../img/partners/callshine.jpg" alt="Jeykhun Imanov Studio">
+			</div>
+			<div class="img-area">
+				<img src="../img/partners/idea.jpg" alt="Jeykhun Imanov Studio">
+			</div>
+			<div class="img-area">
+				<img src="../img/partners/travel-shop.jpg" alt="Jeykhun Imanov Studio">
+			</div>
+			<div class="img-area">
+				<img src="../img/partners/santral.jpg" alt="Jeykhun Imanov Studio">
+			</div>
+		</div>
+	</div>
+	
+
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
+	<script src="../js/attached-menu.js"></script>
+
+	<script>
+		$('.owl-carousel').owlCarousel({
+			loop:true,
+			margin:10,
+			autoplay: true, 
+			autoplaySpeed: 1000,
+			responsive:{
+				0:{
+					items:1
+				},
+				600:{
+					items:3
+				},
+				1000:{
+					items:5
+				}
+			}
+		})
+	</script>
+
+</body>
+</html>

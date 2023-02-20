@@ -1,0 +1,22 @@
+User-Agent: *
+
+Disallow: 
+
+Disallow: /pages/
+
+Disallow: /pages/works/
+
+Disallow: /img/
+
+Disallow: /css/
+
+Disallow: /js/
+
+Disallow: /libs/
+
+Disallow: /errors/
+
+
+
+Sitemap: http://arctkgroup.com/sitemap.xml
+

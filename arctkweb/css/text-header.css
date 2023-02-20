@@ -1,0 +1,13 @@
+.text-header {
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 900;
+  font-size: 28px;
+  padding-top: 83px;
+}
+
+@media (max-device-width: 375px) {
+    
+    margin-left: 10vw;   
+}
+/*# sourceMappingURL=text-header.css.map */

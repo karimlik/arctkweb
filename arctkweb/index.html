@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>ArcTK</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+  <meta name="description" content="Creative Architecture Bureau">
+  <meta name="keywords" content="Architecture, Design, Blueprints, Furniture, Handcrafted">
+  <meta name="author" content="KRMLI - Digital">
+  <meta name="robots" content="nofollow">
+  <meta name="yandex-verification" content="d91a7a41f9585ef7" />
+  <link rel="stylesheet" href="css/main.css">  
+  <link rel="stylesheet" href="css/nav-bar.css">
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="libs/swiper-5.2.1/package/css/swiper.min.css">
+
+  <!-- Demo styles -->
+</head>
+<body>
+
+	<style>
+	
+    	html, body {
+          height: 100%;
+        }
+        
+        .clouds {
+			opacity: 0.3;
+		}
+        
+        .swiper-container {
+          position: fixed;
+          z-index: 1;
+          width: 100%;
+          height: 100%;
+        }
+        
+        .swiper-slide {
+          text-align: left;
+          background: #fff;
+        }
+        
+        .swiper-slide .slide-wrapper {
+          margin-top: 57.5vh;
+          margin-left: 5vw;
+          margin-bottom: 2vh;
+        }
+        
+        .swiper-slide .slide-wrapper h1 {
+          font-size: 8vh;
+          font-weight: 900;
+          color: white;
+          text-transform: uppercase;
+          margin: 0;
+        }
+        
+        .swiper-slide .slide-wrapper .add-text {
+          position: absolute;
+          z-index: 3;
+          max-width: 80vw;
+          font-size: 4vh;
+          font-weight: 400;
+          color: #eee;
+          margin-top: 0;
+          top: 72.5vh;
+        }
+        
+        .container .insta-logo {
+          position: absolute;
+          z-index: 999;
+          margin-top: 0;
+          float: right;
+          right: 2.75em;
+          top: 90vh;
+        }
+        
+        @media (max-device-width: 991px) {
+          .swiper-slide .slide-wrapper h1 {
+            font-size: 5.25vh;
+          }
+
+          .swiper-slide .slide-wrapper {
+            margin-top: 52.5vh;
+        }
+
+          .swiper-slide .slide-wrapper .add-text {
+            top: 62.5vh;
+          }
+          .container .insta-logo {
+          position: absolute;
+          z-index: 999;
+          margin-top: 0;
+          float: right;
+          right: 1em;
+          top: 77.5vh;
+        }
+        }
+        
+        @media (max-device-width: 375px) {
+          .swiper-slide .slide-wrapper h1 {
+            font-size: 5.25vh;
+          }
+          .swiper-slide .slide-wrapper {
+            margin-top: 67.5vh;
+            margin-left: 5vw;
+            margin-bottom: 2vh;
+            }
+          .swiper-slide .slide-wrapper .add-text {
+            top: 77.5vh;
+          }
+          
+          .container .insta-logo {
+          position: absolute;
+          z-index: 999;
+          margin-top: 0;
+          float: right;
+          right: 1em;
+          top: 77.5vh;
+          
+        }
+
+        @media (min-device-width: 375px) and (max-device-height: 812px)
+        {
+            .swiper-slide .slide-wrapper h1 {
+            font-size: 5.25vh;
+          }
+
+          .swiper-slide .slide-wrapper {
+            margin-top: 52.5vh;
+        }
+
+          .swiper-slide .slide-wrapper .add-text {
+            top: 62.5vh;
+          }
+          .container .insta-logo {
+                position: absolute;
+                z-index: 999;
+                margin-top: 0;
+                float: right;
+                right: 1em;
+                top: 77.5vh;
+            }
+        }
+
+
+		header {
+			background-color: rgba(255, 255, 255, 0.1);
+		}
+
+		header .logo {
+			color: white;
+		}
+	</style>
+
+	<nav id = "overlay">
+		<img src="img/close.svg" alt="menu-btn" class="close-btn" id="close-menu">
+	<ul class="under-menu">
+		<li>
+			<a href="#">home</a>
+			<span>the main page.</span>
+		</li>
+		<li>
+			<a href="pages/about-us">about us</a>
+			<span>information about us.</span>
+		</li>
+		<li>
+			<a href="pages/portfolio">projects</a>
+			<span>our latest projects.</span>
+		</li>
+		<li>
+			<a href="pages/partners">partners</a>
+			<span>our partners companies.</span>
+		</li>
+		<li>
+			<a href="pages/contact">contact</a>
+			<span>contact with us.</span>
+		</li>
+		<li>
+			<a href="pages/landscape">landscape</a>
+			<span>our landscape projects.</span>
+		</li>
+		<li>
+			<a href="pages/coming-soon">handmade</a>
+			<span>handmade items.</span>
+		</li>
+		<li>
+			<a href="pages/coming-soon">art</a>
+			<span>we draw arts.</span>
+		</li>
+		<li>
+			<a href="pages/coming-soon">bloggers</a>
+			<span>our companion-bloggers.</span>
+		</li>
+		<li>
+			<a href="pages/coming-soon">leadership</a>
+			<span>our leadership.</span>
+		</li>
+	</ul>
+	<div class="insta-logo"><a href="https://www.instagram.com/arctkgroup/"><img src="./img/instagram_32x.png" alt="instagram"></a></div>
+	<div class="fb-logo"><a href="#"><img src="./img/fb_32x.png" alt="facebook"></a></div>
+	<div class="twitter-logo"><a href="#"><img src="./img/twitter_32x.png" alt="twitter"></a></div>
+</nav>
+
+	<header id="top_nav">
+		<a href="#" class="logo"><img src="./img/wlogo.png" alt="ARcTK GROUP" style="height: 4em;"></a>
+		<img src="img/menu_light.svg" alt="menu-btn" class="menu-btn" id="open-menu">
+	</header>
+
+	<!-- Swiper -->
+	<div class="swiper-container">
+		
+		<div class="swiper-wrapper">
+		
+			<div class="swiper-slide" style="background: url(./img/main-bg/main1.png); background-size: cover; background-repeat: no-repeat; height: 100%;">
+				
+				<!-- Slide İnform -->
+				<div class="slide-wrapper">
+					<!-- Slide Title -->
+					<h1>let us</br>make great</h1>
+					<!-- Additional text -->
+					<div class="add-text">
+						<p>let us make great architecture project.</p>
+					</div>
+				</div>
+				
+			</div>
+    		
+			<div class="swiper-slide" style="background: url(./img/main-bg/main2.png); background-size: cover; background-repeat: no-repeat; height: 100%;">
+				
+				<!-- Slide İnform -->
+				<div class="slide-wrapper">
+					<!-- Slide Title -->
+					<h1>Be </br>impressive</h1>
+					<!-- Additional text -->
+					<div class="add-text">
+						<p>We gonna make for you impressive interior.</p>
+					</div>
+				</div>
+
+			</div>
+			<div class="swiper-slide" style="background: url(./img/main-bg/main3.png); background-size: cover; background-repeat: no-repeat; height: 100%;">
+				
+				<!-- Slide İnform -->
+				<div class="slide-wrapper">
+					<!-- Slide Title -->
+					<h1>Be </br>modern</h1>
+					<!-- Additional text -->
+					<div class="add-text">
+						<p>We create modern things.</p>
+					</div>
+				</div>
+			
+			</div>
+			
+			<div class="swiper-slide" style="background: url(./img/main-bg/main4.png); background-size: cover; background-repeat: no-repeat; height: 100%;">
+				
+				<!-- Slide İnform -->
+				<div class="slide-wrapper">
+					<!-- Slide Title -->
+					<h1>Be </br>creative</h1>
+					<!-- Additional text -->
+					<div class="add-text">
+						<p>We'll make for ya creative things.</p>
+					</div>
+				</div>
+			
+			</div>
+		
+		</div>
+	
+	</div>
+
+	<div class="container">
+		<div class="clouds"></div>
+	</div>
+
+	<script src="libs/swiper-5.2.1/package/js/swiper.min.js"></script>
+	<script src="js/slider-presets.js"></script>
+	<script src="js/attached-menu.js"></script>
+	<script src="js/add.js"></script>
+
+	<script>
+		var swiper = new Swiper('.swiper-container', {
+    
+			loop: true,
+			autoplay: {
+				delay: 5000,
+				disableOnInteraction: false,
+			},
+	
+		});
+	</script>
+
+</body>
+</html>
