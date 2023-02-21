@@ -49,11 +49,6 @@ section h1 {
           animation: clouds-animate 60s linear infinite;
 }
 
-img[src="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png"]
-{
-    display: none;
-}
-
 @-webkit-keyframes clouds-animate {
   from {
     background-position: 0px;
