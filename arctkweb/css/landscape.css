@@ -1,0 +1,117 @@
+.main p{
+	position: relative;
+	height: auto;
+	width: 100%;
+	text-align: center;
+	font-weight: 500;
+	font-size: 1.5em;
+	letter-spacing: 1px;
+	color: #777;
+}
+.main .gallery{
+	position: relative;
+	height: auto;
+	width: 90%;
+	margin: auto;
+	padding: 45px 0;
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+	grid-gap: 2vh;
+	grid-auto-flow: dense;
+}
+.main .gallery .img {
+	position: relative;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+	border-radius: 2px;
+}
+
+.main .gallery .video-container {
+	position: relative;
+	width: 100%;
+	padding-bottom: 56.25%;
+}
+
+.main .gallery .video-container .video {
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+
+.main .gallery .img:first-child{
+	grid-column-start: span 2;
+	grid-row-start: span 2;
+}
+.main .gallery .img:nth-child(2n+3){
+	grid-row-start: span 2;
+}
+
+.main .gallery .img:nth-child(4n+5){
+    grid-column-start: span 1;
+	grid-row-start: span 1;
+}
+
+.main .gallery .img:nth-child(6n+5){
+	grid-column-start: span 1;
+	grid-row-start: span 1;
+}
+.main .gallery .img:nth-child(6n+7){
+	grid-row-start: span 1;
+}
+.main .gallery .img:nth-child(8n+9){
+	grid-column-start: span 1;
+	grid-row-start: span 1;
+}
+.main .gallery .img img{
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	filter: brightness(0.5) grayscale(100);
+	border-radius: 2px;
+	transition: 0.3s ease-in-out;
+}
+.main .gallery .img:hover img{
+	filter: brightness(1) grayscale(0);
+}
+
+@media only screen and (max-width: 768px){
+	.main h1{
+		font-size: 1.8em;
+		width: 400px;
+	}
+	.main p{
+		font-size: 1.2em;
+	}
+	.main .gallery{
+		display: grid;
+		grid-template-columns: auto auto auto;
+	}
+}
+@media only screen and (max-width: 430px){
+	.main h1{
+		font-size: 1.2em;
+		margin: 0 auto;
+		width: 300px;
+	}
+	.main p{
+		font-size: 0.89em;
+	}
+	.main .gallery{
+		display: block;
+	}
+	.main .gallery .img{
+		display: block;
+		width: 100%;
+		height: 100%;
+		margin:2% 0;
+	}
+	.main .gallery .img img{
+		display: block;
+		filter: brightness(1) grayscale(0);
+	}
+}
